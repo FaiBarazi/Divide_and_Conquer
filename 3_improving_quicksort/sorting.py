@@ -44,7 +44,6 @@ def randomized_quick_sort(a, l, r):
     k = random.randint(l, r)
     a[l], a[k] = a[k], a[l]
     a, m1, m2 = partition3(a, l, r)
-    print (a, m1, m2)
     randomized_quick_sort(a, l, m1 - 1)
     randomized_quick_sort(a, m2 + 1, r)
 
